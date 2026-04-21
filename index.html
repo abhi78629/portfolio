@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abhishek's responsive e-portfolio showcasing projects, skills, and contact details.">
+  <title>Abhishek | E-Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#home" data-scroll>Abhishek</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+
+      <nav id="site-menu" class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="#about" data-scroll>About</a>
+        <a class="nav-link" href="#projects" data-scroll>Work</a>
+        <a class="nav-link" href="#skills" data-scroll>Skills</a>
+        <a class="nav-link" href="#contact" data-scroll>Contact</a>
+        <a class="btn btn-primary hire-btn" href="#contact" data-scroll>Hire Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section-pad">
+      <div class="container hero-layout reveal is-visible">
+        <p class="eyebrow">Portfolio 2026</p>
+        <h1>Abhishek</h1>
+        <p class="hero-tagline">B.Tech Student | <span id="typing-text" aria-live="polite"></span></p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-scroll>View Projects</a>
+          <a href="#contact" class="btn btn-ghost" data-scroll>Let's Connect</a>
+        </div>
+
+        <div class="hero-media reveal">
+          <img
+            src="assets/images/hero-circuit.svg"
+            width="1200"
+            height="520"
+            alt="Abstract circuit-themed illustration representing technology and AI"
+            decoding="async"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-pad">
+      <div class="container about-grid reveal">
+        <div class="about-content">
+          <h2>Building the future through code and intelligence</h2>
+          <p>
+            As a B.Tech student deeply immersed in software and AI, I focus on building meaningful
+            digital products that combine clean engineering with practical machine-learning ideas.
+          </p>
+          <p>
+            My journey bridges web development, analytics, and embedded experimentation so I can craft
+            solutions that are both useful and scalable.
+          </p>
+
+          <div class="about-cards">
+            <article class="mini-card">
+              <h3>B.Tech Student</h3>
+              <p>Computer Science Engineering</p>
+            </article>
+            <article class="mini-card">
+              <h3>AI/ML Focus</h3>
+              <p>Predictive analytics and intelligent systems</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="about-image-wrap">
+          <img
+            src="assets/images/abhishek-profile.png"
+            width="675"
+            height="812"
+            loading="lazy"
+            alt="Portrait of Abhishek in professional attire"
+            decoding="async"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills section-pad">
+      <div class="container">
+        <header class="section-title reveal">
+          <h2>My Toolset</h2>
+          <p>Core technologies I use to design, build, and ship practical solutions.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="skill-pill">HTML</span>
+            <h3>HTML</h3>
+            <p>Semantic structure</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-pill">CSS</span>
+            <h3>CSS</h3>
+            <p>Responsive layouts</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-pill">JS</span>
+            <h3>JavaScript</h3>
+            <p>Interactive behavior</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-pill">PY</span>
+            <h3>Python</h3>
+            <p>Automation and ML</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-pill">ARD</span>
+            <h3>Arduino</h3>
+            <p>Hardware prototyping</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-pill">DATA</span>
+            <h3>Data Analysis</h3>
+            <p>Insight-driven decisions</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-pad">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2>Innovation in Action</h2>
+            <p>A curated selection of projects that blend software engineering and intelligence.</p>
+          </div>
+          <a
+            class="view-all"
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >View all projects</a>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="assets/images/project-grocery.svg"
+                width="700"
+                height="420"
+                loading="lazy"
+                alt="Illustration of a grocery inventory dashboard"
+                decoding="async"
+              >
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Management</span>
+              <h3>Grocery Management System</h3>
+              <p>
+                A streamlined platform for inventory tracking and transaction management in retail workflows.
+              </p>
+              <a
+                class="project-link"
+                href="https://github.com/search?q=grocery+management+system"
+                target="_blank"
+                rel="noopener noreferrer"
+              >View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="assets/images/project-diabetes.svg"
+                width="700"
+                height="420"
+                loading="lazy"
+                alt="Abstract medical dashboard visual for machine-learning prediction"
+                decoding="async"
+              >
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Machine Learning</span>
+              <h3>Diabetes Prediction ML Project</h3>
+              <p>
+                Predictive modeling to identify health risk patterns with robust preprocessing and classification.
+              </p>
+              <a
+                class="project-link"
+                href="https://github.com/search?q=diabetes+prediction+machine+learning"
+                target="_blank"
+                rel="noopener noreferrer"
+              >View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="assets/images/project-arduino.svg"
+                width="700"
+                height="420"
+                loading="lazy"
+                alt="Arduino LED matrix board visual"
+                decoding="async"
+              >
+            </div>
+            <div class="project-body">
+              <span class="project-tag">Hardware</span>
+              <h3>Arduino LED Matrix Display</h3>
+              <p>
+                A custom LED matrix controller for real-time data visualization and embedded interaction.
+              </p>
+              <a
+                class="project-link"
+                href="https://github.com/search?q=arduino+led+matrix+display"
+                target="_blank"
+                rel="noopener noreferrer"
+              >View Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-pad">
+      <div class="container">
+        <div class="contact-card reveal">
+          <h2>Let's discuss your next big idea.</h2>
+          <p>
+            Open for collaborations, internships, and ambitious products at the intersection of AI and web.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:abhishek.dev@example.com">Email Me</a>
+            <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <p class="footer-name">Abhishek</p>
+      <p class="footer-copy">&copy; 2026 Abhishek. Built with intention.</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
